@@ -1,0 +1,18 @@
+[project]
+name = "roboarm_egb2"
+version = "0.0.1"
+authors = [
+	{name = "Enzo Gurgel", email="egb2@cin.ufpe.br"}
+]
+description="A robotic arm library: provide pose transformation, kinematics and trajectory planning"
+readme = "README.md"
+classifiers = [
+	"Topic :: Robotics :: Robotic arm",
+]
+license = "MIT"
+dependencies = [
+	"numpy>=2.2.5",
+	"roboticstoolbox-python>=1.1.1",
+	"pytest>=8.3.5"
+]
+
