@@ -1,5 +1,12 @@
 # roboarm is a python library that provides a simple API to control a robotic arm
 
+## To run project
+
+- clone this repo
+- checkout roboticArm branch
+- run pip install .
+- optional, run tests with pytest
+
 ## Position module
 
 This module provides functions to compute the coordinates of a point in a target frame given an origin frame by the means of a homogeneous transformation matrix in the euclidian plane.
@@ -12,7 +19,7 @@ This module provides functions to compute the coordinates of a point in a target
 
 after calling one of the above functions apply the resulting matrix to a vector to get the position of the point in the target frame.
 
-## Control module
+## Kinematics module
 
 TODO
 
