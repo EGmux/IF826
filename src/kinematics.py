@@ -22,7 +22,7 @@ def fk(theta1, theta2):
 
 def ik(x,y):
     """
-    given a robotic arm, type RR, effector pose, return the required joint configuration
+    given a robotic arm, type RR, effector frame translation, return the required joint configuration 
     ----------------------
     input
     x: Number, x coordinate of effector frame
