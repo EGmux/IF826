@@ -7,7 +7,6 @@ def multiply(matrix1, matrix2):
         matrix[0][0][0][0] + matrix[0][1][0][0],
         matrix[0][0][1][1] + matrix[0][1][1][1]
     ]
-    print(sut)
     return sut
 
 
@@ -22,7 +21,6 @@ def multiply4(compose1, compose2):
 
 def adapt(vec):
     return np.array([np.array([[vec[0]], [vec[1]]]), np.array([[1], [1]])])
-
 
 def R(theta):
     """
@@ -107,7 +105,9 @@ def SE2_pose(x=0.0, y=0.0, theta=0):
     x: Number, translation in the x-axis in meters
     y: Number, translation in the y-axis in meters
     theta: Number, rotation in radians
+    ----------------------------------------
+    return
+    hom: Numpy array, homogeneous transformation matrix
     """
-    sut = SE2_theta(theta) + SE2_xy(x, y)
+    return SE2_theta(theta) + SE2_xy(x, y)
 
-    return sut
